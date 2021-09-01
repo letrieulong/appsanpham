@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.InforFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutinfor"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#FF0000">
+            <LinearLayout
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imgbtnghfrag"
+                        android:background="@drawable/giohang"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="70dp"
+                        android:id="@+id/imguserfrag"
+                        android:src="@drawable/personuser"
+                        android:layout_height="70dp"/>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Họ Và Tên"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="25dp"
+                            android:id="@+id/txtfragname"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Họ Và Tên"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            android:id="@+id/txtfragbirthday"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/btnloginfrag"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/white"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Đăng Nhập"
+                            android:background="@drawable/viewbtn"
+                            android:textSize="18dp"/>
+                        <Button
+                            android:id="@+id/btnregisterfrag"
+                            android:textColor="@color/white"
+                            android:background="@drawable/viewbtn"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Đăng Ký"
+                            android:textSize="18dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativelayoutinfor">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayoutfrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpagefrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/upload"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".object.Upload">
+
+    <LinearLayout
+        android:id="@+id/linear_sanpham"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Thêm Sản Phẩm"
+            android:textSize="30dp"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/noimage"
+            android:id="@+id/choeseimg"/>
+
+        <EditText
+            android:background="@drawable/viewedt"
+            android:hint="Nhập Tên Sản Phâm"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edttensp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/choeseimg"/>
+
+        <EditText
+            android:background="@drawable/viewedt"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edtpricesp"
+            android:inputType="number"
+            android:hint="Nhập Giá Sản Phẩm"
+            android:maxLength="12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/choeseimg"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:background="@drawable/viewedt"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:textSize="20dp"
+            android:id="@+id/btnadd"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_chitiet"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Chi Tiết Sản Phẩm"
+            android:textSize="30dp"/>
+
+        <EditText
+            android:layout_marginTop="25dp"
+            android:background="@drawable/viewedt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtmaterial"
+            android:hint="  Chất Liệu"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:background="@drawable/viewedt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtorigin"
+            android:hint="  Xuất Xứ"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:background="@drawable/viewedt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtcontent"
+            android:hint="  Mô Tả Thông Tin Sản Phẩm"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/img_viewct"
+            android:src="@drawable/noimage"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/viewedt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu"/>
+    </LinearLayout>
+
+</RelativeLayout>
