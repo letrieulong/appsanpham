@@ -1,5 +1,5 @@
 # appsanpham
-# Sử dụng api, mysql server, PHP ( dùng để kết nối với mysql )
+# Sử dụng mysql server, PHP ( dùng để kết nối với mysql ), và chuyển đổi dữ liệu thành dưới dạng json để kết nối và lấy dữ liệu ...
 # có sử dụng các thư viện để gọi api trong android studio
 # đây là demo ứng dụng bán hàng của tôi 
 # click vào để xem nhé 
